@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="Langlois-Teston Timothe-Renaud"/>
+    <title>pathfinding</title>
+    <script language="javascript" src="libraries/p5.js" type="text/javascript"></script>
+    <script language="javascript" src="libraries/p5.dom.js" type="text/javascript"></script>
+    <script language="javascript" src="libraries/p5.sound.js" type="text/javascript"></script>
+    <script language="javascript" src="sketch.js" type="text/javascript"></script>
+    <script language="javascript" src="spot.js" type="text/javascript"></script>
+    <style> 
+    	body {
+    		vertical-align: center;
+			max-width: 900px;
+			margin: auto;
+			padding: 1em;
+			background:rgba(0,0,0,.1);
+			color: #333;
+			font-size: 1.2em;
+			font-family: georgia, "trebuchet ms", arial, serif;
+		}
+	    canvas {
+	    	vertical-align: center;
+	    	}
+	    div {
+			padding: 0 1em;
+			background: #fff;
+			border: 1px solid gray;
+			border-radius: 4px;
+		}	
+	    .title{
+    			position: relative;
+    			text-align: center;
+    			margin: 1.5em 0;
+    			color: #345;
+    			text-shadow: 0 1px 1px #fff;
+    			text-align: center;
+    			font-family: georgia, "trebuchet ms", arial, serif;
+    		}
+    </style>
+  </head>
+  <body>
+  	<div>
+  		<h3 class="title"><span>Présentation</span></h3>
+  		<p>Qu'est-ce que le pathfinding ou autrement dit "La recherhce de chemin".<br>
+		La recherche de chemin, couramment appelée pathfinding, est un problème de l'intelligence artificielle qui se rattache plus généralement au domaine de la planification et de la recherche de solution. Il consiste à trouver comment se déplacer dans un environnement entre un point de départ et un point d'arrivée en prenant en compte différentes contraintes..</p>
+	
+		<h3>Nature du problème</h3>
+		<p>Initialement, un problème de pathfinding peut se ramener à un problème de recherche du meilleur chemin entre deux nœuds dans un graphe. Il existe un ensemble d'algorithmes classiques pour résoudre ce type de problème. Toutefois, le pathfinding devient un problème complexe lorsque l'on cherche à prendre en compte diverses contraintes additionnelles (exécution en temps réel, présence d'incertitudes, contrainte de ressources, environnement évolutif, etc.).</p>
+
+		<p>PS: Si l'animation du script ne ce lance pas, il est alors probable qu'il n'y ait pas de possibilité de résolution.</p>
+
+		<ul class="icons">
+			<li><a href="https://p5js.org/" class="fa fa-connectdevelop" aria-hidden="true">Outils: P5.js</a></li>
+			<li><a href="https://fr.wikipedia.org/wiki/Recherche_de_chemin" class="fa fa-wikipedia-w" aria-hidden="true">source de presentation (Wikipedia).</a></li>
+		</ul>
+  	</div><br>
+  	<canvas id="myCancas" width="200" height="200" style="border: 1px"></canvas>
+  </body>
+</html>
